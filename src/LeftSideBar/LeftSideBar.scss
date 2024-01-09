@@ -1,0 +1,61 @@
+.side-bar {
+  margin-top: 20px;
+  width: 15%;
+
+  &__filters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+
+    &-text {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button {
+  width: fit-content;
+  height: 40px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-color: transparent;
+  cursor: pointer;
+
+  &--add {
+    height: auto;
+    background-color: rgb(175, 225, 175);
+  }
+
+  &--clear {
+    background-color: rgb(0, 34, 75);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-inline: 3px;
+
+    &-text {
+      margin: 0;
+      text-align: center;
+      font-family: "Roboto", Helvetica, sans-serif;
+      color: rgb(0, 34, 75);
+
+      &--add {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 5px;
+      }
+
+      &--clear {
+        color: rgb(248, 248, 248);
+      }
+    }
+  }
+}

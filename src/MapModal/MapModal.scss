@@ -1,0 +1,27 @@
+.modal {
+  position: fixed;
+  z-index: 3;
+}
+
+.submit-button {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: rgb(40, 40, 40);
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-close {
+  border: none;
+  background-color: transparent;
+}

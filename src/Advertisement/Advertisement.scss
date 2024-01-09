@@ -1,0 +1,58 @@
+.card {
+  width: 200px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid;
+
+  &__photo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 8px;
+  }
+
+  &__price-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(97, 96, 112, 1);
+  }
+
+  &__price-number {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-icon {
+      width: 11px;
+      height: 20px;
+    }
+
+    &-city {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 0;
+    }
+  }
+
+}
