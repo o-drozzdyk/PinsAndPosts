@@ -48,8 +48,8 @@ export const Map: React.FC<Props> = ({ points }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const borderResponse = await fetch('/geo/ukraine.geojson');
-        const regionsResponse = await fetch('/geo/regions.geojson');
+        const borderResponse = await fetch('/PinsAndPosts/geo/ukraine.geojson');
+        const regionsResponse = await fetch('/PinsAndPosts/geo/regions.geojson');
 
         const borderData = await borderResponse.json();
         const regionsData = await regionsResponse.json();
@@ -63,6 +63,8 @@ export const Map: React.FC<Props> = ({ points }) => {
 
     fetchData();
   }, [])
+
+  console.log(regions);
 
   const handleRegionClick = (regionName: string) => {
     dispatch(regionsActions.addRegion(regionName));
