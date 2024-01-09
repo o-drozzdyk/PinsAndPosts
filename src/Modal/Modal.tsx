@@ -88,9 +88,9 @@ export const Modal = () => {
     return data.length + 1;
   }
 
-  const handleLocationChange = (coordinates: { lat: number; lng: number }) => {
-    setFormData((current) => ({ ...current, coordinates }));
-  };
+  // const handleLocationChange = (coordinates: { lat: number; lng: number }) => {
+  //   setFormData((current) => ({ ...current, coordinates }));
+  // };
 
   const handleShowMapClick = () => {
     dispatch(mapModalActions.changeState(true));

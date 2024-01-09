@@ -5,18 +5,18 @@ import './MapModal.scss';
 import { useAppDispatch } from "../store/hooks";
 import { actions as mapModalActions } from "../features/mapModal";
 import { useState } from "react";
-import L, { LeafletMouseEvent } from "leaflet";
+import L from "leaflet";
 
 export const MapModal = () => {
   const mapCenter: [number, number] = [49.0, 31.0];
 
-  const [coordinates, setCoordinates] = useState<[number, number]>([0, 0]);
+  const [coordinates] = useState<[number, number]>([0, 0]);
 
-  const handleMapClick = (event: LeafletMouseEvent) => {
-    const { lat, lng } = event.latlng;
+  // const handleMapClick = (event: LeafletMouseEvent) => {
+  //   const { lat, lng } = event.latlng;
 
-    setCoordinates([lat, lng]);
-  };
+  //   setCoordinates([lat, lng]);
+  // };
 
   const markerIcon = new L.Icon({
     iconUrl: process.env.PUBLIC_URL + '/img/location-pin.svg',
